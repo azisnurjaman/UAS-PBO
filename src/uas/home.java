@@ -233,7 +233,7 @@ public class home extends javax.swing.JFrame {
             if ((jawab = JOptionPane.showConfirmDialog(null, "Are you sure want to add this data?", "Attention", JOptionPane.YES_NO_OPTION)) == 0) {
                 Connection con = (Connection) Koneksi.konek();
                 Statement st = con.createStatement();
-                st.executeUpdate("UPDATE produks SET "
+                st.executeUpdate("UPDATE course SET "
                     + "c_name = '" + cName.getText() + "', "
                     + "enrollment = '" + Enrollment.getText() + "', "
                     + "start_date = '" +sDate.getText() + "',"
